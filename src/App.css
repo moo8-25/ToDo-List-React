@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* myStyles */
+/* ======================================================================= */
+
+:root {
+  --primary: #00395b;
+  --primaryBackground: white;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+.container {
+  width: 50%;
+  margin: 150px auto;
+  background-color: var(--primaryBackground);
+  padding: 5px;
+}
+
+.card {
+  color: white !important;
+  background-color: var(--primary) !important;
+  margin-top: 15px;
+  transition: all 0.3s !important;
+}
+
+.card:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+
+}
+
+.card .icons>* {
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* .card .icons>*:hover {
+  background-color: #b3b3b4 !important;
+} */
+
+.card .icons>:nth-child(2) {
+  color: rgb(0, 44, 174) !important;
+  border: solid rgb(0, 44, 174);
+}
+
+.card .icons>:nth-child(3) {
+  color: rgb(156, 0, 0) !important;
+  border: solid rgb(156, 0, 0);
+}
+
+.checked {
+  color: "white";
+  background-color: "#8bc34a";
+}
+
+.EditConfirmModel {
+  color: red !important;
+}
+
+.addingSec .Button {
+  background-color: var(--primary);
+}
+
+/* responsive */
+
+@media (max-width:1120px) {
+
+  .icons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:700px) {
+
+  .container {
+    width: 70%
+  }
+}
+
+/*======== responsive =======*/
+
+
+/* fonts */
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-ExtraLight.ttf");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-ExtraBold.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-Medium.ttf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../public/fonts/Mada-SemiBold.ttf");
+  font-weight: 600;
+}
+
+/*========== fonts ===========*/
